@@ -1,0 +1,420 @@
+@use "../global" as *;
+
+.p-article {
+  &__form {
+    margin-top: 70px;
+
+    > p {
+      line-height: 1.7;
+      font-size: 1.6rem;
+      width: 100%;
+    }
+    label {
+      margin-top: 3px;
+    }
+    @include tab {
+      margin-top: 252px;
+      margin-left: 51px;
+      > p {
+        line-height: 1.5;
+        width: 95%;
+        font-size: 1.5rem;
+        letter-spacing: 0.07em;
+      }
+    }
+    @include sp {
+      margin-top: 0px;
+      margin-left: 15px;
+    }
+  }
+  &__company {
+    margin-bottom: 115px;
+    @include tab {
+      margin-bottom: 0px;
+    }
+    @include sp {
+      margin-top: 108px;
+    }
+
+    h2 {
+      border-bottom: 1px solid #333333;
+      @include tab {
+        margin-left: 32px;
+      }
+      @include sp {
+        margin-left: 18px;
+      }
+    }
+    dl {
+      display: flex;
+      width: 73%;
+      @include tab {
+        width: 92%;
+      }
+      @include tab {
+        width: 96%;
+      }
+      flex-wrap: wrap;
+      margin: 0 0 0 auto;
+    }
+    dt {
+      width: 18%;
+      @include sp {
+        width: 45%;
+        line-height: 3.7;
+      }
+      border-bottom: 1px solid #333333;
+    }
+    dd {
+      width: 82%;
+      @include sp {
+        width: 55%;
+        font-size: 1.4rem;
+        line-height: 4.2;
+      }
+      border-bottom: 1px solid #333333;
+    }
+  }
+  &__vision {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 45%;
+    @include tab {
+      width: 61%;
+    }
+    @include tab {
+      width: 92%;
+    }
+    h3 {
+      font-size: 2.4rem;
+      font-family: $ff2;
+      letter-spacing: 0em;
+    }
+    p {
+      margin-top: 22px;
+      @include tab {
+        line-height: 1.75;
+      }
+      @include sp {
+        line-height: 2;
+        font-size: 1.4rem;
+        margin-top: 30px;
+      }
+    }
+  }
+  &__ceo {
+    height: 994px;
+    margin-top: 129px;
+    @include tab {
+      height: 870px;
+      margin-top: 88px;
+    }
+    position: relative;
+    &-message {
+      position: absolute;
+      background-color: #f0f0f0;
+      width: 70%;
+      right: 0;
+      margin-top: 13%;
+      @include tab {
+        margin-top: 16%;
+      }
+      @include sp {
+        margin-top: 36%;
+        margin-right: 5%;
+        width: 96%;
+      }
+
+      h2 {
+        margin-top: 89px;
+        margin-left: 24%;
+        @include tab {
+          margin-left: 11%;
+        }
+      }
+
+      p {
+        margin-left: 24%;
+        margin-right: 23%;
+        margin-bottom: 91px;
+        @include tab {
+          margin-left: 9%;
+          margin-right: 12%;
+          line-height: 1.7;
+        }
+        @include sp {
+          font-size: 1.4rem;
+          margin-left: 12%;
+          margin-right: 7%;
+          line-height: 1.98;
+        }
+      }
+    }
+    img {
+      position: absolute;
+      width: 38%;
+      z-index: 2;
+      object-fit: none;
+      object-position: 46% 58%;
+      zoom: 62%;
+      @include tab {
+        margin-left: 40px;
+        width: 42%;
+      }
+      @include sp {
+        margin-left: 0;
+        width: 77%;
+      }
+    }
+  }
+
+  &__aboutus {
+    margin-top: 96px;
+    @include tab {
+      margin-top: 49px;
+      padding: 43px 0;
+    }
+    padding: 113px 0;
+    background-image: url(../../画像/img/skyline-1.png);
+    background-size: cover;
+    background-position: center 0;
+    &::after {
+      content: "";
+      left: 0;
+      width: 100vw;
+      height: 160px;
+      display: block;
+      background-color: #f0f0f0;
+      position: absolute;
+      z-index: -1;
+    }
+    &-box {
+      background-color: $white;
+      padding: 2% 0%;
+      max-width: 82%;
+      margin: 0 auto;
+      @include sp {
+        padding: 2% 4%;
+      }
+
+      h2 {
+        padding-top: 19px;
+        padding-left: 30px;
+        @include sp {
+          padding-left: 10px;
+        }
+      }
+      p {
+        padding-left: 30px;
+        font-family: $ff2;
+        width: 90%;
+        @include sp {
+          width: 100%;
+          padding-left: 12px;
+          font-size: 1.45rem;
+          line-height: 1.9;
+        }
+      }
+      button {
+        margin: 30px 0 30px 30px;
+        @include sp {
+          margin: 21px 0 30px 11px;
+        }
+      }
+    }
+  }
+  &__2colum {
+    padding-bottom: 56px;
+    @include tab {
+      margin-left: 30px;
+      flex-direction: column;
+      p {
+        padding-top: 19px;
+        @include tab {
+          padding-top: 0;
+        }
+      }
+    }
+    @include sp {
+      margin-left: 0px;
+      padding-bottom: 49px;
+    }
+    p {
+      margin-top: 17px;
+      margin-bottom: 3px;
+      @include sp {
+        margin-top: 0px;
+      }
+    }
+    &-left,
+    &-right {
+      width: 47%;
+      button {
+        margin-top: 22px;
+        @include sp {
+          margin-top: 25px;
+        }
+      }
+      @include tab {
+        margin-top: 19px;
+        width: 70%;
+      }
+      @include sp {
+        margin-top: 32px;
+        margin-left: 3%;
+        width: 95%;
+      }
+    }
+
+    &-right {
+      margin-left: 6%;
+      width: 50%;
+      @include tab {
+        margin-left: 0;
+        margin-top: 53px;
+        width: 70%;
+      }
+      @include sp {
+        margin-top: 12px;
+        width: 95%;
+        margin-left: 3%;
+      }
+    }
+    &-bg {
+      padding-top: 20px;
+      background-color: #f0f0f0;
+    }
+    img {
+      height: 350px;
+      @include sp {
+        height: 245px;
+      }
+    }
+    &2 {
+      padding-bottom: 110px;
+      &-left {
+        width: 40%;
+        h2 {
+          margin-top: 70px;
+        }
+        p {
+          margin-top: 0px;
+        }
+        button {
+          margin-top: 17px;
+        }
+      }
+      &-right {
+        width: 50%;
+        margin-left: 8%;
+        @include tab {
+          width: 68%;
+          margin-left: 4%;
+        }
+        @include sp {
+          width: 92%;
+        }
+        img {
+          margin-top: 38px;
+
+          height: 384px;
+          @include tab {
+            margin-top: 22px;
+            height: 351px;
+          }
+          @include sp {
+            height: 234px;
+          }
+        }
+      }
+      &-bg {
+        margin-top: 58px;
+        background-color: #f0f0f0;
+      }
+    }
+  }
+  &__2colum,
+  &__2colum2 {
+    display: flex;
+    padding-top: 34px;
+    @include tab {
+      padding-top: 0px;
+      flex-direction: column;
+    }
+  }
+  &__2colum2 {
+    @include tab {
+      flex-direction: column-reverse;
+      padding-bottom: 70px;
+      &-left {
+        margin-left: 27px;
+        width: 66%;
+        h2 {
+          margin-top: 0;
+        }
+        @include sp {
+          margin-left: 16px;
+          width: 90%;
+        }
+      }
+    }
+    @include sp {
+      padding-bottom: 31px;
+    }
+  }
+  &__latest {
+    &-box {
+      margin-top: 32px;
+      @include tab {
+        margin-left: 28px;
+        margin-top: 0;
+      }
+      @include sp {
+        margin-left: 13px;
+        margin-top: 18px;
+      }
+      dl {
+        width: 100%;
+        margin-left: inherit;
+        @include tab {
+          margin-left: 0;
+          margin-top: 10px;
+          width: 95%;
+        }
+      }
+      dt {
+        margin-top: 10px;
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+          margin-top: 29px;
+        }
+        @include tab {
+          margin-top: 0;
+          line-height: 0.5;
+        }
+        @include sp {
+          font-size: 0.6rem;
+        }
+      }
+      dd {
+        border-bottom: 1px solid #dddddd;
+        @include tab {
+          font-size: 1.4rem;
+          line-height: 2.8;
+        }
+        @include sp {
+          font-size: 1.3rem;
+          line-height: 2.3;
+        }
+      }
+      button {
+        margin-left: inherit;
+        margin-top: 35px;
+        @include tab {
+          margin-left: 0;
+          margin-top: 28px;
+        }
+      }
+    }
+  }
+}
