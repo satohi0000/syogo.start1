@@ -325,7 +325,7 @@ select {
 }
 .p-article__just {
   margin-top: 87px;
-  background-image: url(../../画像/img/fv.png);
+  background-image: url(../画像/img/fv.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 455px;
@@ -398,7 +398,7 @@ select {
 .p-fv {
   position: relative;
   height: 550px;
-  background-image: url(../../画像/img/fv.png);
+  background-image: url(../画像/img/fv.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
