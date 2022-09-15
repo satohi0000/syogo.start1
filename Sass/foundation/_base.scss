@@ -7,31 +7,43 @@ body {
     width: 100%;
     object-fit: cover;
   }
-  h1 {
-    @include f_style2(7.2, 86, 0);
+  li {
+    @include f_style2(1.6, 19, 0);
+    font-weight: bold;
     font-family: $ff1;
-    @include tab {
-      @include f_style2(5.2, 86, 63);
-      line-height: 1.3;
-    }
+  }
+  a {
+    color: black;
+  }
+  h1 {
+    @include f_style2(3.6, 44, 0);
+    font-family: $ff1;
+    font-weight: bold;
+    color: white;
   }
   h2 {
-    @include f_style2(3.2, 94, 68);
+    @include f_style2(3.2, 39, 0);
     font-family: $ff1;
-    @include sp {
-      font-size: 2.8rem;
-    }
+    font-weight: bold;
   }
   h3 {
-    @include f_style2(3.2, 39, 68);
+    @include f_style2(1.8, 27, 0);
+    font-family: $ff1;
   }
   h4 {
-    @include f_style2(2, 86, 0);
+    @include f_style2(3.6, 44, 0);
+    font-weight: bold;
+    font-family: $ff1;
+    color: white;
   }
   h5 {
     @include f_style2(1.6, 30, 4);
     font-weight: bold;
     font-family: $ff1;
+    color: white;
+  }
+  time {
+    @include f_style2(1.3, 18, 0);
   }
   p {
     @include f_style2(1.6, 32, 0);
@@ -48,10 +60,5 @@ body {
   label {
     @include f_style2(1.6, 94, 4);
     line-height: 1;
-  }
-  li {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: $ff1;
   }
 }

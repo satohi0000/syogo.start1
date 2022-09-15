@@ -1,21 +1,24 @@
 @use "../global" as *;
 
 .c-button {
-  color: #fff;
-  background-color: #000;
-  width: 160px;
-  line-height: 31px;
-  font-size: 1.2rem;
+  color: black;
+  background-color: white;
+  width: 313px;
+  padding: 0 0px 0 0px;
+  line-height: 39px;
+  font-size: 1.8rem;
   display: block;
   text-align: center;
   font-weight: bold;
   text-align: center;
-
-  &__submit {
-    text-align: center;
-    @include sp {
-      margin-top: 40px;
-    }
+  &2 {
+    color: white;
+    background-color: #83032a;
+    width: 210px;
+    height: 14%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 3% 43%;
   }
 }
 

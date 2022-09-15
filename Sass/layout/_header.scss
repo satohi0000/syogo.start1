@@ -1,63 +1,19 @@
 @use "../global" as *;
 
 .l-header {
+  width: 100%;
+  background-color: $white;
+  img {
+    width: 50%;
+    margin-left: 7%;
+  }
   &-nav {
-    margin-top: 246px;
-    margin-right: 8.3%;
+    margin: auto 0;
   }
   &__inner {
+    max-width: $inner1;
+    margin: 20px auto;
     display: flex;
     justify-content: space-between;
-    width: 93%;
-    height: 50px;
-    padding: 23px 3%;
-    position: absolute;
-    z-index: 99;
-    margin-right: 3%;
-    img {
-      width: 74%;
-    }
-    @include tab {
-      padding: 23px 3%;
-      img {
-        width: 48%;
-      }
-    }
-    @include sp {
-      padding: 10px 3%;
-      img {
-        width: 55%;
-      }
-    }
-
-    &__left {
-      width: 260px;
-      padding-left: 20px;
-    }
-    &__right {
-      display: flex;
-      &-p {
-        color: $white;
-        margin-left: 97px;
-        @include sp {
-          margin-left: 111%;
-          margin-right: 7%;
-        }
-        font-size: 0.5rem;
-        line-height: 1;
-      }
-    }
-  }
-}
-.is-fixed {
-  position: fixed;
-  height: 80px;
-  width: 100%;
-  transition: 0.3s;
-  z-index: 99;
-  img,
-  p,
-  span {
-    filter: invert(1);
   }
 }
