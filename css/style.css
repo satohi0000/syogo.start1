@@ -266,7 +266,7 @@ select {
 .l-footer {
   width: 100%;
   background-color: #333;
-  padding: 35px 0 40px 10px;
+  padding: 35px 0 40px 0px;
 }
 .l-footer p {
   font-size: 1.4rem;
@@ -299,13 +299,24 @@ select {
   text-align: center;
   margin: 55px 0 0 27px;
 }
+@media (max-width: 768px) {
+  .p-article__mychallenge h2 {
+    margin: 55px 0 0 0px;
+  }
+}
 .p-article__mychallenge button {
   margin: 0px auto;
-  margin-left: 36%;
+  margin-left: 50%;
+  transform: translateX(-50%);
   margin-top: 59px;
 }
 .p-article__mychallenge-3colum {
   display: flex;
+}
+@media (max-width: 768px) {
+  .p-article__mychallenge-3colum {
+    flex-direction: column;
+  }
 }
 .p-article__mychallenge-3colum1 {
   display: flex;
@@ -314,6 +325,16 @@ select {
   flex-direction: column;
   width: 31%;
   border: 1px solid #707070;
+}
+@media (max-width: 768px) {
+  .p-article__mychallenge-3colum1 {
+    margin: 47px 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .p-article__mychallenge-3colum1 {
+    width: 100%;
+  }
 }
 .p-article__mychallenge-3colum1 h3 {
   padding: 23px 10px 32px 13px;
@@ -329,6 +350,7 @@ select {
   background-size: cover;
   background-repeat: no-repeat;
   height: 455px;
+  width: 100%;
 }
 .p-article__just h4 {
   text-align: center;
@@ -596,7 +618,9 @@ textarea {
   height: 14%;
   font-size: 1.6rem;
   font-weight: bold;
-  margin: 3% 43%;
+  margin-left: 50%;
+  transform: translateX(-95px);
+  margin-top: 35px;
 }
 
 #c-BTN1.active {
