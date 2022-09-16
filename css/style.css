@@ -610,6 +610,7 @@ textarea {
   text-align: center;
   font-weight: bold;
   text-align: center;
+  cursor: pointer;
 }
 .c-button2 {
   color: white;
@@ -621,6 +622,7 @@ textarea {
   margin-left: 50%;
   transform: translateX(-95px);
   margin-top: 35px;
+  cursor: pointer;
 }
 
 #c-BTN1.active {
